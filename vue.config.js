@@ -2,7 +2,7 @@ module.exports = {
   // 修改的配置
   // 将baseUrl: '/api',改为baseUrl: '/',
   publicPath: "/",
-  outputDir: "doc",
+  outputDir: "docs",
   productionSourceMap: false,
   css: {
     // 是否使用css分离插件 ExtractTextPlugin
