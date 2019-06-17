@@ -2,7 +2,7 @@
 import axios from "axios";
 import Vue from "vue";
 import app from "./plugins/common";
-import './plugins/element.js'
+import "./plugins/element.js";
 app.$eventBus = new Vue();
 const fn = Vue.prototype;
 // 请求池
@@ -10,7 +10,7 @@ const requests = [];
 let loadCount = 0; //http计数器
 const http = axios.create({
   // baseURL: "/api/v2",
-  baseURL: "/testData",
+  baseURL: process.env.NODE_ENV === "production" ? "/vue-element-frame/testData" : "/testData",
   data: {},
   withCredentials: true,
   headers: {
