@@ -13,6 +13,7 @@ import {
   Col,
   Tabs,
   TabPane,
+  Checkbox,
   Loading
 } from "element-ui";
 
@@ -28,5 +29,6 @@ Vue.use(Row);
 Vue.use(Col);
 Vue.use(Tabs);
 Vue.use(TabPane);
+Vue.use(Checkbox);
 Vue.use(Loading.directive);
 Vue.prototype.$loading = Loading.service;

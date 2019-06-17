@@ -7,7 +7,7 @@ import app from "@/plugins/common";
 Vue.use(Router);
 
 const router = new Router({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
