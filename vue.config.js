@@ -1,7 +1,7 @@
 module.exports = {
   // 修改的配置
   // 将baseUrl: '/api',改为baseUrl: '/',
-  publicPath: "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/vue-element-frame/" : "/",
   outputDir: "docs",
   productionSourceMap: false,
   css: {
