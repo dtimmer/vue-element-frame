@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "msg": "成功",
+  "data": {
+    "functionModels": [
+      {
+        "code": "icon_home",
+        "name": "首页",
+        "sort": 0,
+        "targetUri": "backlog"
+      },
+      {
+        "uid": "fef86b5f-b924-11e7-bcda-0050568d103f",
+        "softwareId": "4e3171b5-b213-11e7-8a9f-0050568d103f",
+        "clientFlag": "smart_pig_web",
+        "code": "zzdagl",
+        "sort": 0,
+        "parentFunctionId": "00000000-0000-0000-0000-000000000000",
+        "treePath": "",
+        "name": "测试目录",
+        "type": "1",
+        "targetUri": "1",
+        "dataStatus": "normal",
+        "subFunctions": null,
+        "entities": null,
+        "child": [
+          {
+            "uid": "7f78ac8b-b925-11e7-bcda-0050568d103f",
+            "softwareId": "4e3171b5-b213-11e7-8a9f-0050568d103f",
+            "clientFlag": "smart_pig_web",
+            "code": "zzda",
+            "sort": 1,
+            "parentFunctionId": "fef86b5f-b924-11e7-bcda-0050568d103f",
+            "treePath": "7f78ac8b-b925-11e7-bcda-0050568d103f;",
+            "name": "测试页面",
+            "type": "1",
+            "targetUri": "testPage",
+            "dataStatus": "normal",
+            "subFunctions": null,
+            "entities": null
+          }
+        ]
+      }
+    ]
+  },
+  "code": "SUCCESS"
+}
