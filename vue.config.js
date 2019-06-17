@@ -2,7 +2,29 @@ module.exports = {
   // 修改的配置
   // 将baseUrl: '/api',改为baseUrl: '/',
   publicPath: "/",
-  outputDir: "doc"
+  outputDir: "doc",
+  productionSourceMap: false,
+  css: {
+    // 是否使用css分离插件 ExtractTextPlugin
+    extract: true,
+    // 开启 CSS source maps?
+    sourceMap: false,
+    // css预设器配置项
+    loaderOptions: {},
+    // 启用 CSS modules for all css / pre-processor files.
+    modules: false
+  },
+  // 压缩图片
+  chainWebpack: config => {
+    config.module
+      .rule("images")
+      .use("image-webpack-loader")
+      .loader("image-webpack-loader")
+      .options({
+        bypassOnDebug: true
+      })
+      .end();
+  }
   // devServer: {
   //   proxy: {
   //     "/api/v2": {
